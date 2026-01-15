@@ -8,23 +8,25 @@ You are fully set up to host this simulation live.
     *(Make it Public so investors can see it)*.
 
 ## Step 2: Push the Code
-Open your terminal in this folder (`simulation_viz`) and run these 3 commands:
+Open your PowerShell terminal and COPY-PASTE this entire block:
 
-```bash
-git init
-git remote add origin https://github.com/YOUR_GITHUB_USERNAME/JB-Energy-Pilot.git
-git add .
-git commit -m "Initial Deploy"
+```powershell
+# 1. Enter the Project Folder
+cd "C:\Users\oleja\OneDrive\Desktop\Website coding\JB-Enterprice\energy_pilot\simulation_viz"
+
+# 2. Connect to GitHub
+git remote remove origin
+git remote add origin https://github.com/JB-Enterprice-hub/JB-Energy-Pilot.git
+
+# 3. Push Code
 git push -u origin main
 ```
 
-*(Note: Replace `YOUR_GITHUB_USERNAME` with your actual username)*.
-
 ## Step 3: Go Live
-One command to build and deploy:
+To bypass Windows Script Security, run this command:
 
-```bash
-npm run deploy
+```powershell
+PowerShell -ExecutionPolicy Bypass -Command "npm run deploy"
 ```
 
 Wait 2 minutes. Your site will be live at:
