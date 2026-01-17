@@ -1,19 +1,17 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   color-scheme: dark;
 }
 
 body {
-  @apply bg-slate-905 text-slate-100 antialiased;
-  background-color: #0f172a;
-  /* Slate 900 fallback */
-  background-image: radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
-    radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
-    radial-gradient(at 100% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+  @apply bg-[#020617] text-slate-100 antialiased font-sans;
+  background-image:
+    radial-gradient(at 0% 0%, rgba(15, 23, 42, 0.5) 0, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(30, 58, 138, 0.1) 0, transparent 50%);
+  background-attachment: fixed;
 }
+
 
 .glass-card {
   @apply bg-white/5 backdrop-blur-lg border border-white/10 rounded-xl shadow-2xl;
